@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="myScript.js"></script>
+
+<div class="header"></div>
+<div class="content">
+  <div class="middle">
+    <iframe class = "middle-iframe" id="middle-iframe-link" src="http://localhost:3000/d/OSOOZvoZk/s3?orgId=1&from=1572028802814&to=1572029702814&theme=light"></iframe>
+  </div>
+  <div class="left">
+    <div class="left-container" onClick="sendLinktoMiddleIframe('one')"><div class="title">Jaeger UI</div><iframe class = "left-iframe" id="one-iframe-link" src="http://10.10.3.164:16686/search"></iframe></div>
+    <div class="left-container" onClick="sendLinktoMiddleIframe('two')"><div class="title">Prometheus</div><iframe class = "left-iframe" id="two-iframe-link" src="http://localhost:9090/graph"></iframe></div>
+    <div class="left-container" onClick="sendLinktoMiddleIframe('three')"><div class="title">Cassandra Dashboard</div><iframe class = "left-iframe" id="three-iframe-link" src="http://localhost:3000/d/cassandra/cassandra?orgId=1&from=1572016233696&to=1572037833696&var-datacenter=DC1&var-cluster=Cloudianregion1&var-keyspace=accountinfo&var-table=All&var-percentiles=99thpercentile&theme=light"></iframe></div>
+    <div class="left-container" onClick="sendLinktoMiddleIframe('four')"><div class="title">S3 Dashboard</div><iframe class = "left-iframe" id="four-iframe-link" src="http://localhost:3000/d/OSOOZvoZk/s3?orgId=1&from=1572028802814&to=1572029702814&theme=light"></iframe></div>
+  </div>
+  <div class="right">
+    <div class="right-container" onClick="sendLinktoMiddleIframe('five')"><div class="title">HyperView Dashboard</div><iframe class = "right-iframe" id="five-iframe-link" src="http://localhost:3000/d/9CWBz0bik/hyperview-dashboard?orgId=1&from=1572035344605&to=1572038944605&var-interval=5s&var-name=All&var-node=All&theme=light"></iframe></div>
+    <div class="right-container" onClick="sendLinktoMiddleIframe('six')"><div class="title">blank</div><iframe class = "right-iframe" id="six-iframe-link"></iframe></div>
+    <div class="right-container" onClick="sendLinktoMiddleIframe('seven')"><div class="title">blank</div><iframe class = "right-iframe" id="seven-iframe-link"></iframe></div>
+    <div class="right-container" onClick="sendLinktoMiddleIframe('eight')"><div class="title">blank</div><iframe class = "right-iframe" id="eight-iframe-link"></iframe></div>
+  </div>
+</div>
+</body>
+</html>
